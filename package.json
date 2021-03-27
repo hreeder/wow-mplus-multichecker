@@ -1,0 +1,37 @@
+{
+  "name": "wow-mplus-multichecker",
+  "version": "1.0.0",
+  "description": "Mythic Plus multi-character checker",
+  "main": "index.js",
+  "dependencies": {
+    "ember-cli": "^3.25.2",
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0",
+    "source-map-support": "^0.5.19"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-source-map-support": "^2.1.2",
+    "serverless": "^2.31.0",
+    "serverless-offline": "^6.5.0",
+    "serverless-webpack": "^5.3",
+    "webpack": "^4.44.1",
+    "webpack-node-externals": "^2.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hreeder/wow-mplus-multichecker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hreeder/wow-mplus-multichecker/issues"
+  },
+  "homepage": "https://github.com/hreeder/wow-mplus-multichecker#readme"
+}

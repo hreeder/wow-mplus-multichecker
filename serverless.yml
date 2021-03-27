@@ -3,12 +3,29 @@ frameworkVersion: '2'
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   lambdaHashingVersion: 20201221
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
 
+plugins:
+- serverless-webpack
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+
 functions:
-  hello:
-    handler: backend/handler.hello
+  api:
+    handler: backend/index.handler
+    events:
+    - http:
+        path: /
+        method: ANY
+        cors: true
+    - http:
+        path: /{any+}
+        method: ANY
+        cors: true

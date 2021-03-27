@@ -17,6 +17,6 @@
         "ms-azuretools.vscode-docker"
 	],
     "remoteUser": "node",
-    "forwardPorts": [4000],
+    "forwardPorts": [4200],
     // "postCreateCommand": "yarn install",
 }
